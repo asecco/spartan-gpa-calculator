@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+
+  "name": "Spartan GPA Calculator",
+  "description": "GPA Calculator for Michigan State University Students",
+  "version": "1.0.0",
+
+  "action": {
+    "default_icon": {
+      "100": "icon-100x100.png",
+      "50": "icon-50x50.png"
+    },
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+      {
+          "matches": ["<all_urls>"],
+          "js": ["js/vendor.js", "js/content_script.js"]
+      }
+  ],
+
+  "permissions": [
+    "storage"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
