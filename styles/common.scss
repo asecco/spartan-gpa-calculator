@@ -1,10 +1,11 @@
 @import 'normalize.css';
 
 $background-color: #18453B;
-$font-size: 18px;
+$font-size: 16px;
 $font-color: #ffffff;
 
 body {
   background-color: $background-color;
+  font-size: $font-size;
   color: $font-color;
 }
