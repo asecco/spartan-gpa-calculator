@@ -21,9 +21,17 @@ calculateBtn.addEventListener('click', (): void => {
     }
   }
 
-  if (Number.isNaN(totalScore/totalCredits)) {
+  if (Number.isNaN(totalScore / totalCredits)) {
     gpaLabel.innerHTML = 'Invalid Input'
   } else {
     gpaLabel.innerHTML = `${(totalScore / totalCredits).toFixed(2)}`
+
+    if (totalScore / totalCredits >= 3.25) {
+      gpaLabel.style.backgroundColor = '#54B725'
+    } else if (totalScore / totalCredits >= 2.0) {
+      gpaLabel.style.backgroundColor = '#B7B400'
+    } else {
+      gpaLabel.style.backgroundColor = '#B71919'
+    }
   }
 })
