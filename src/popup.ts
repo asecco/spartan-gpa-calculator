@@ -35,3 +35,11 @@ calculateBtn.addEventListener('click', (): void => {
     }
   }
 })
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    event.preventDefault()
+    event.stopPropagation()
+    calculateBtn.click()
+  }
+});
