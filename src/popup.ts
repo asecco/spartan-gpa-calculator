@@ -23,6 +23,7 @@ calculateBtn.addEventListener('click', (): void => {
 
   if (Number.isNaN(totalScore / totalCredits)) {
     gpaLabel.innerHTML = 'Invalid Input'
+    gpaLabel.style.backgroundColor = ''
   } else {
     gpaLabel.innerHTML = `${(totalScore / totalCredits).toFixed(2)}`
 
