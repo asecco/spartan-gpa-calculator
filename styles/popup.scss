@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-.logo {
+#logo-btn {
   position: absolute;
   width: 10%;
   top: 0.7em;
@@ -15,8 +15,9 @@
   transition-duration: 0.4s;
 }
 
-.logo:hover {
+#logo-btn:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 label {

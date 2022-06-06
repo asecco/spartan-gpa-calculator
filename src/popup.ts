@@ -5,6 +5,7 @@ const calculateBtn = document.getElementById('calculate-btn')
 const inputColumn = document.querySelectorAll('input')
 const gpaLabel = document.getElementById('gpa-label')
 const helpBtn = document.getElementById('help-btn')
+const logoBtn = document.getElementById('logo-btn')
 
 calculateBtn.addEventListener('click', (): void => {
   let totalCredits = 0
@@ -52,6 +53,17 @@ helpBtn.addEventListener('click', (): void => {
     title: 'How To Use:',
     html: "• Each row corresponds to a course.<br><br>" + "• Enter the credit amount on the left and GPA grade on the right.<br><br>" +  "• Click the calculate button.",
     confirmButtonText: 'Start Calculating!',
+    confirmButtonColor: '#18453B',
+    width: '75%',
+    customClass: 'swal',
+  })
+})
+
+logoBtn.addEventListener('click', (): void => {
+  Swal.fire({
+    title: 'Thanks for using this extension!',
+    html: "If this extension helped you, please consider giving it a <a href='' target='_blank'>rating</a>.",
+    confirmButtonText: 'Done!',
     confirmButtonColor: '#18453B',
     width: '75%',
     customClass: 'swal',
