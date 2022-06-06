@@ -97,6 +97,14 @@ input::-webkit-inner-spin-button {
   background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
 }
 
-#calculate-btn:hover:before {
+#calculate-btn:hover:before{
   transform: translateX(15em);
+}
+
+#help-btn {
+  position: absolute;
+  top: 0.3em;
+  left: 0.3em;
+  border-radius: 50%;
+  cursor: pointer;
 }
