@@ -51,7 +51,6 @@ helpBtn.addEventListener('click', (): void => {
   Swal.fire({
     title: 'How To Use:',
     html: "• Each row corresponds to a course.<br><br>" + "• Enter the credit amount on the left and GPA grade on the right.<br><br>" +  "• Click the calculate button.",
-    iconColor: '#18453B',
     confirmButtonText: 'Start Calculating!',
     confirmButtonColor: '#18453B',
     width: '75%',
