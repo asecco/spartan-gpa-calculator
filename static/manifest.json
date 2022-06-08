@@ -3,14 +3,6 @@
   "description": "GPA Calculator for Michigan State University Students",
   "version": "1.0.0",
   "manifest_version": 3,
-  "background": {
-    "service_worker": "serviceWorker.js"
-  },
-  "content_scripts": [
-    {
-      "js": ["contentScript.js"]
-    }
-  ],
   "permissions": [],
   "action": {
     "default_title": "Spartan GPA Calculator",
