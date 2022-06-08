@@ -7,6 +7,20 @@ const gpaLabel = document.getElementById('gpa-label')
 const helpBtn = document.getElementById('help-btn')
 const logoBtn = document.getElementById('logo-btn')
 
+const checkActive = () => {
+  for (let i = 0; i < 6; i++) {
+    if (inputColumn[i] === document.activeElement || inputColumn[i + 6] === document.activeElement) {
+      inputColumn[i].style.border = '2px solid #1BFD9C'
+      inputColumn[i + 6].style.border = '2px solid #1BFD9C'
+    } else {
+      inputColumn[i].style.border = ''
+      inputColumn[i + 6].style.border = ''
+    }
+  }
+}
+
+setInterval(checkActive, 1);
+
 calculateBtn.addEventListener('click', (): void => {
   let totalCredits = 0
   let totalScore = 0
@@ -29,7 +43,6 @@ calculateBtn.addEventListener('click', (): void => {
     gpaLabel.style.backgroundColor = ''
   } else {
     gpaLabel.innerHTML = `${(totalScore / totalCredits).toFixed(2)}`
-
     if (totalScore / totalCredits >= 3.25) {
       gpaLabel.style.backgroundColor = '#54B725'
     } else if (totalScore / totalCredits >= 2.0) {
