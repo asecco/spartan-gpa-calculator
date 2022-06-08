@@ -48,24 +48,19 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-#credits-column {
+.column {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#credits-column {
   float: left;
   width: 50%;
 }
 
-#grade-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 #calculate-btn {
-  --green: #1BFD9C;
   font-size: 12px;
   padding: 0.7em 2.7em;
   letter-spacing: 0.06em;
@@ -75,9 +70,9 @@ input::-webkit-inner-spin-button {
   overflow: hidden;
   transition: all 0.3s;
   line-height: 1.4em;
-  border: 2px solid var(--green);
+  border: 2px solid $calculate-btn-color;
   background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
-  color: var(--green);
+  color: $calculate-btn-color;
   box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
 }
 
