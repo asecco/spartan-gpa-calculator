@@ -30,7 +30,7 @@
 ![1](https://user-images.githubusercontent.com/40510223/172290630-c5313105-0a73-430f-8495-431e09478aa0.png)
 
 ## Getting Started
-If you want to use this chrome extension, head over to the [Chrome](https://google.com) Web Store and install it. If you find it useful, please consider giving it a rating.
+If you want to use this chrome extension, head over to the [Chrome](https://chrome.google.com/webstore/detail/spartan-gpa-calculator/fdaobippifgiaigkefmccocjgdhhkoph) Web Store and install it. If you find it useful, please consider giving it a rating.
 
 ![2](https://user-images.githubusercontent.com/40510223/172296830-5860bd90-dea4-4cf8-878d-ebe580e90cf3.png)
 
