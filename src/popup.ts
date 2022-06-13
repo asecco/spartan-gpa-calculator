@@ -75,7 +75,7 @@ helpBtn.addEventListener('click', (): void => {
 logoBtn.addEventListener('click', (): void => {
   Swal.fire({
     title: 'Thanks for using this extension!',
-    html: "If this extension helped you, please consider giving it a <a href='' target='_blank'>rating</a>.",
+    html: "If this extension helped you, please consider giving it a <a href='https://chrome.google.com/webstore/detail/spartan-gpa-calculator/fdaobippifgiaigkefmccocjgdhhkoph' target='_blank'>rating</a>.",
     confirmButtonText: 'Done!',
     confirmButtonColor: '#18453B',
     width: '75%',
